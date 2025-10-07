@@ -1,0 +1,81 @@
+/* ----- GRID CONTAINER PROPERTIES ----- */
+.grid-container {
+  display: grid; /* Task 1 */
+  grid-template-columns: repeat(3, 1fr); /* Task 2: 3 equal columns */
+  grid-template-rows: 100px 150px; /* Task 3: 2 rows, different heights */
+  row-gap: 15px; /* Task 4: vertical gap */
+  column-gap: 20px; /* Task 4: horizontal gap */
+
+  justify-content: center; /* Task 5: try start, center, end, space-between, space-around */
+  align-content: center;   /* Task 6: try start, center, end, space-between, space-around */
+
+  background-color: #f0f0f0;
+  padding: 20px;
+  height: 400px; /* To see vertical alignment clearly */
+}
+
+/* ----- GRID ITEMS ----- */
+.item {
+  background-color: #289a2c;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+/* Task 1: Span across 2 columns */
+.item1 {
+  grid-column: span 2;
+}
+
+/* Task 2: Span across 2 rows */
+.item2 {
+  grid-row: span 2;
+  background-color: #2196f3;
+}
+
+/* Task 3: Define both row and column span */
+.item3 {
+  grid-area: 2 / 2 / 3 / 4; /* row-start / column-start / row-end / column-end */
+  background-color: #ff9800;
+}
+
+/* Task 4: Align a single item horizontally */
+.item4 {
+  justify-self: end; /* Try start, center, end, stretch */
+  background-color: #9c27b0;
+}
+
+/* Task 5: Align a single item vertically */
+.item5 {
+  align-self: end; /* Try start, center, end, stretch */
+  background-color: #e91e63;
+}
+
+/* Task 6: Change order visually */
+.item6 {
+  order: -1;
+  background-color: #607d8b;
+}
+/* Task 7: Change order visually */
+.item7 {
+  order: 2;
+  background-color: #ff5722;
+}   
+/* Task 8: Change order visually */
+.item8 {
+  order: 1;
+  background-color: #795548;
+}
+/* Task 9: Change order visually */
+.item9 {
+  order: 0;
+  background-color: #3f51b5;
+}
+/* Task 10: Change order visually */
+.item10 {
+  order: 3;
+  background-color: #009688;
+}
